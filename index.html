@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es-ES">
+
+<head>
+  <!-- Document Meta
+============================================= -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--IE Compatibility Meta-->
+  <meta name="author" content="wplly" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="construction html5 template" />
+  <link href="assets/images/favicon/favicon.ico" rel="icon" />
+
+  <!-- Fonts
+============================================= -->
+  <link
+    href="http://fonts.googleapis.com/css?family=Montserrat:400,700%7CRaleway:100,200,300,400,500,600,700,800%7CDroid+Serif:400,400italic,700,700italic"
+    rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <!-- Stylesheets
+============================================= -->
+  <link href="assets/css/external.css" rel="stylesheet" />
+  <!-- Extrnal CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Boostrap Core CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- Style CSS -->
+
+  <!-- google traslate -->
+
+  <!-- <script type="text/javascript">
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+        }
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+  <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- Document Title
+    ============================================= -->
+  <title>VR PARAGLIDER</title>
+
+  <style>
+    body {
+      /* overflow-y: hidden; */
+      /* background-image: url(../../assets/images/NewPage/8.jpg) !important; */
+    }
+
+    section {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.5s ease;
+      padding: 0 2rem;
+
+    }
+
+    section.active {
+      max-height: 100vh;
+      opacity: 1;
+      padding: 2rem;
+    }
+
+    .card {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+      transition: transform 0.3s ease;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000eb;
+      color: black;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: bottom 0.4s ease;
+    }
+
+    .card:hover .overlay {
+      bottom: 0;
+    }
+
+    .overlay h3 {
+      margin: 0 0 10px;
+    }
+
+    .overlay p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .diagonal {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+
+    .fixed-footer {
+      position: fixed;
+      bottom: 20px;
+      /* right: 20px; */
+      background-color: transparent;
+      color: white;
+      padding: 10px 0px;
+      font-size: 14px;
+      z-index: 9999;
+    }
+
+    @media (max-width: 991px) {
+      .fixed-footer {
+        display: none;
+      }
+
+      .img-about {
+        display: none;
+      }
+
+      .contact-mb {
+        padding: 0 !important;
+      }
+
+    }
+
+    .superior-izquierda {
+      top: 4px;
+      left: 20px;
+    }
+
+    .footer-izquierda {
+      left: 20px;
+    }
+
+    .footer-derecha {
+      right: 20px;
+    }
+/* 
+    .map {
+      height: 20vh;
+      filter: grayscale(100%) invert(92%) contrast(83%);
+    } */
+  </style>
+</head>
+
+<body class="">
+  <div class="preloader">
+    <div class="spinner">
+      <img class="img-responsive img-home-mb" src="assets\images/NewPage/cargando.png" alt="Background" style="width: 100%; padding-bottom: 20px;" />
+      <div class="bounce1">
+      </div>
+      <div class="bounce2">
+      </div>
+      <div class="bounce3">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Header
+============================================= -->
+  <header id="navbar-spy" class="full-header">
+    <nav id="primary-menu" class="navbar navbar-fixed-top style-1">
+      <div class="row">
+        <div class="container cont-nav" style="padding-left: 5%; width: 100%">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <img src="assets/images/logo/logo-light.png" alt="Yellow Hats" style="width: 200px;">   -->
+          </div>
+          <div class="collapse navbar-collapse pull-left" id="bs-example-navbar-collapse-1" style="padding-right: 20px;">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a onclick="mostrarSeccion('inicio')" class="dropdown-toggle">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a onclick="mostrarSeccion('nosotros')" class="dropdown-toggle">nosotros</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a onclick="mostrarSeccion('mision')" class="dropdown-toggle">misión</a>
+              </li>
+              <li class="nav-item">
+                <a onclick="mostrarSeccion('vision')" class="dropdown-toggle">visión</a>
+              </li>
+              <li class="nav-item">
+                <a onclick="mostrarSeccion('productos')" class="dropdown-toggle">productos</a>
+              </li> -->
+              <li class="nav-item">
+                <a onclick="mostrarSeccion('contacto')" class="dropdown-toggle">contacto</a>
+              </li>
+            </ul>
+            <!-- <div class="module module-search pull-left" style="margin-top: 12px;">
+              <img width="40" src="assets/images/logo/language.png" alt="sqlapio">
+              <a href="https://sqlapio.com" class="dropdown-toggle"
+                style="color: #ffffff; font-weight: 700; padding-left: 6px ">ES</a>
+              <a href="https://en.sqlapio.com" class="dropdown-toggle"
+                style="color: #ffffff; font-weight: 700; padding-left: 7px ">EN</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner
+============================================= -->
+  <section id="inicio" class="hero-2 active home-mb" style="background-image: url(assets/images/NewPage/4.png); background-size: cover;">
+    <div class="item">
+      <div class="item-bg bg-overlay">
+        <div class="bg-section2">
+          <div class="col-xs-12 col-sm-12 col-md-12 view-new">
+            <img class="img-responsive img-home-mb" src="assets\images/NewPage/a.png" alt="Background" style="width: 40%;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="nosotros" class="hero-2" style="background-image: url(assets/images/NewPage/2.png); background-size: cover;">
+    <div class="item">
+      <div class="item-bg bg-overlay">
+        <div class="bg-section2">
+          <div class="col-xs-12 col-sm-12 col-md-12 view-new">
+            <div class="col-xs-6 col-sm-6 col-md-6 img-about hidden-sm hidden-xs" style="display: flex; justify-content: flex-start;">
+              <!-- <img src="assets\images/NewPage/0.png" alt="Background" style="width: 76%;" /> -->
+              <p style="color: white; text-align: justify;">
+                <strong style="font-size: 26px;">Bienvenidos a PARAGLIDER VENEZUELA 🪂</strong>    
+                <br>
+                <br>
+                    ¡Vive la emoción del vuelo sin despegar los pies del suelo!<br><br>
+                    Somos la primera empresa de entretenimiento especializada en juegos mecánicos de simulación de vuelo en parapente en Venezuela. Combinamos tecnología de vanguardia, paisajes locales y adrenalina pura para que vivas una experiencia única, segura y accesible para todos.
+                    <br><br>
+                    <strong>¿Qué es PARAGLIDER?</strong><br><br>
+                    Paraglider es un simulador de vuelo en parapente con tecnología inmersiva que te hace sentir como si volaras sobre montañas, playas o valles, todo dentro de una cápsula segura con movimiento real y efectos de viento. Ideal para todas las edades, desde niños hasta adultos que buscan emoción y diversión.
+                    <br><br>
+                    Con Paraglider podrás:
+                    <br><br>
+                    · Sentir el despegue, vuelo y aterrizaje como si estuvieras en el aire.
+                    <br><br>
+                    · Elegir escenarios de vuelo inspirados en paisajes de Venezuela (El Ávila, Morrocoy, Mérida, Canaima).
+                    <br><br>
+                    · Obtener una foto digital o impresa como recuerdo de tu vuelo.
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-5">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="hero-2" style="z-index: 2; padding-top: 0px; background-image: url(assets/images/NewPage/3.png); background-size: cover;">
+    <div class="row contact-mb" style="padding: 0 8%;">
+      <div class="col-xs-12 col-sm-12 col-md-12" style="height: 100vh;display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+        <div class="col-xs-12 col-sm-12 col-md-12 widgets-contact" style="font-size: 12px; padding-top: 30px; padding-bottom: 0;">
+          <div class="widget" style="margin-top: 41px; padding-left: 0px !important;">
+            <div class="" style="color: #2f2f2f; margin-top: 41px;">
+              <!-- <img src="assets/images/email.png" style="width: 60px;"> -->
+              <!-- <img src="assets\images/NewPage/correo.png" alt="Background" style="width: 90px; padding-bottom: 20px;" /> -->
+              <p class="font-heading text-uppercase" style="color: white; font-weight: 900; margin-left: 0px; font-size: 13px;">
+                <a href="mailto:soporte@sqlapio.com" style="color: white; font-weight: 900; margin-left: 0px;">111@111.com</a>
+              </p>
+            </div>
+          </div>
+          <hr style="color: #de592f; border-top: 1px solid #de592f;">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="col-xs-3 col-sm-3 col-md-3" style="margin-bottom: 15px;">
+            <iframe class="map" style="margin: 0 auto; border-radius: 7px; border: 0px;"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=sambil chacao&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              width="100%" height="324" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+              
+            <hr style="color: #de592f; margin-top: 0px; border-top: 1px solid #de592f;">
+            <span class="badge text-bg-light" style="text-align: start; color: #de592f; padding: 9px 14px; background-color: #333;">
+              <i class="fa fa-map-marker" style="color: #de592f;" aria-hidden="true"></i> <strong>Dirección:</strong> 
+              🛍️ C.C. Sambil
+            </span>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3" style="margin-bottom: 15px;">
+            <iframe class="map" style="margin: 0 auto; border-radius: 7px; border: 0px;"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=AV CAURIMARE CON CALLE CHAMA CC CARONI NIVEL PB MODULO C LOCAL C-19 URB COLINAS DE BELLO MONTE&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              width="100%" height="324" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+              
+            <hr style="color: #de592f; margin-top: 0px; border-top: 1px solid #de592f;">
+            <span class="badge text-bg-light" style="text-align: start; color: #de592f; padding: 9px 14px; background-color: #333;">
+              <i class="fa fa-map-marker" style="color: #de592f;" aria-hidden="true"></i> <strong>Dirección:</strong> 
+              🛍️ C.C. Tolón
+            </span>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3" style="margin-bottom: 15px;">
+            <iframe class="map" style="margin: 0 auto; border-radius: 7px; border: 0px;"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=AV CAURIMARE CON CALLE CHAMA CC CARONI NIVEL PB MODULO C LOCAL C-19 URB COLINAS DE BELLO MONTE&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              width="100%" height="324" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+              
+            <hr style="color: #de592f; margin-top: 0px; border-top: 1px solid #de592f;">
+            <span class="badge text-bg-light" style="text-align: start; color: #de592f; padding: 9px 14px; background-color: #333;">
+              <i class="fa fa-map-marker" style="color: #de592f;" aria-hidden="true"></i> <strong>Dirección:</strong> 
+              🛍️ C.C. El Recreo
+            </span>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3" style="margin-bottom: 15px;">
+            <iframe class="map" style="margin: 0 auto; border-radius: 7px; border: 0px;"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=AV CAURIMARE CON CALLE CHAMA CC CARONI NIVEL PB MODULO C LOCAL C-19 URB COLINAS DE BELLO MONTE&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              width="100%" height="324" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+              
+            <hr style="color: #de592f; margin-top: 0px; border-top: 1px solid #de592f;">
+            <span class="badge text-bg-light" style="text-align: start; color: #de592f; padding: 9px 14px; background-color: #333;">
+              <i class="fa fa-map-marker" style="color: #de592f;" aria-hidden="true"></i> <strong>Dirección:</strong> 
+              🛍️ C.C. Líder
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <div class="fixed-footer superior-izquierda" style="z-index: 0">
+    <img src="assets/images/NewPage/a.png" style="width: 5%">
+  </div>
+
+  <!-- Footer 
+============================================= -->
+  <footer>
+    <div class="fixed-footer footer-derecha diagonal">
+      <span style="font-size: 10px; color: rgb(255, 255, 255);">© 2025 Copyright: All rights reserved.</span>
+    </div>
+    <div class="fixed-footer footer-izquierda">
+      <div class="widget-social-icon pull-none-xs text-center" style="display: flex; justify-content: center; flex-direction: column;">
+        <a href="#" onclick="openEmail()" target="_blank" style="margin-bottom: 8px; margin-left: 0px !important;">
+          <i class="fa fa-envelope"></i><i class="fa fa-envelope"></i>
+        </a>
+        <a href="#" target="_blank" style="margin-bottom: 8px; margin-left: 0px !important;">
+          <i class="fa fa-facebook"></i><i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" target="_blank" style="margin-left: 0px !important;">
+          <i class="fa fa-instagram"></i><i class="fa fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer Scripts
+============================================= -->
+
+  <script>
+
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll("section");
+
+      secciones.forEach(sec => {
+        sec.classList.remove("active");
+      });
+
+      const target = document.getElementById(id);
+      target.classList.add("active");
+
+      // Desplazar hacia la sección activa
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+  <script>
+    function openEmail() {
+      const email = "soporte@sqlapio.com";
+      const subject = "Solicitar Información";
+
+      // Intenta abrir Gmail en una nueva pestaña
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`;
+      window.open(gmailUrl, "_blank");
+
+      // Copia el correo al portapapeles como respaldo
+      navigator.clipboard.writeText(email).then(() => {
+        alert("Correo copiado al portapapeles. Si Gmail no se abre, pégalo manualmente en tu cliente de correo.");
+      }).catch(err => {
+        console.error("Error al copiar el correo: ", err);
+      });
+    }
+  </script>
+  <script src="assets/js/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/plugins.js?v=1.0.0"></script>
+  <script src="assets/js/functions.js?v=1.2.0"></script>
+
+  <!-- RS5.0 Core JS Files -->
+  <script type="text/javascript" src="assets/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+  <script type="text/javascript" src="assets/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script type="text/javascript"
+    src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function () {
+      jQuery("#slider1").revolution({
+        sliderType: "standard",
+        sliderLayout: "auto",
+        delay: 6000,
+        disableProgressBar: "on",
+        spinner: "off",
+        navigation: {
+          keyboardNavigation: "off",
+          keyboard_direction: "horizontal",
+          mouseScrollNavigation: "off",
+          onHoverStop: "off",
+          arrows: {
+            enable: false,
+          },
+          bullets: {
+            style: "slider-bullet",
+            enable: true,
+            hide_onmobile: false,
+            hide_onleave: false,
+            hide_delay: 200,
+            hide_delay_mobile: 1200,
+            hide_under: 0,
+            hide_over: 9999,
+            tmp: "<span></span>",
+            direction: "horizontal",
+            space: 5,
+            h_align: "center",
+            v_align: "center",
+            h_offset: 0,
+            v_offset: 280,
+          },
+        },
+        gridwidth: 1230,
+        gridheight: 100,
+      });
+    });
+  </script>
+</body>
+
+</html>
+
