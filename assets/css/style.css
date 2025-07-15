@@ -1387,7 +1387,7 @@ footer {
   top: 0;
   position: fixed;
   z-index: 99999;
-  background-color: #ffff;
+  background-color: #83cbec;
   overflow: hidden;
 }
 
@@ -1820,7 +1820,7 @@ footer {
 }
 
 .full-header .navbar-nav > li > a {
-  color: #2f2f2f;
+  color: #e76a35;
 }
 
 .full-header .module-search .search-icon i,
@@ -9626,7 +9626,7 @@ footer hr {
   /* background-color: #ffffff; */
   font-size: 20px;
   font-weight: 400;
-  color: #ffffff;
+  color: #406f90;
   display: block;
   float: left;
   text-align: center;
