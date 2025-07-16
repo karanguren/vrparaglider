@@ -10920,3 +10920,12 @@ div#slider figure {
     align-items: center;
     justify-content: space-evenly;
   }
+
+  .view-new-hm {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+
