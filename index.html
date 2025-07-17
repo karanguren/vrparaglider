@@ -50,7 +50,7 @@ function googleTranslateElementInit() {
 
   <!-- Document Title
     ============================================= -->
-  <title>VR PARAGLIDER</title>
+  <title>VR PARAGLIDING</title>
 
   <style>
 
@@ -71,13 +71,6 @@ function googleTranslateElementInit() {
     }
 
     @media (max-width: 991px) {
-      /* .fixed-footer {
-        display: none;
-      }
-
-      .img-about {
-        display: none;
-      } */
 
       .contact-mb {
         padding: 0 !important;
@@ -101,11 +94,6 @@ function googleTranslateElementInit() {
 
     }
 
-    /* .superior-izquierda {
-      top: 4px;
-      left: 20px;
-    } */
-
     .footer-izquierda {
       left: 20px;
     }
@@ -113,26 +101,12 @@ function googleTranslateElementInit() {
     .footer-derecha {
       right: 20px;
     }
-    
-    /* Estilo para la imagen divisora */
-    .image-divider {
-        position: relative;
-        width: 100%;
-        /* height: 100px; Ajusta el alto de la imagen divisora */
-        background-color: transparent; /* Puede ser transparente si no quieres un fondo */
-        z-index: 10; /* Asegura que la imagen esté sobre las secciones */
-    }
 
-    /* La imagen debe ocupar todo el contenedor de la imagen divisora */
-    .image-divider img {
-        position: absolute;
-        top: -50px; /* Ajusta la posición para que la imagen quede centrada */
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%; /* Ajusta el tamaño de la imagen según lo desees */
-        height: auto;
-        z-index: 5; /* La imagen debe estar sobre las secciones */
-}
+    .video {
+      width: 100%;
+      height: auto;
+    }
+    
   </style>
 </head>
 
@@ -203,26 +177,22 @@ function googleTranslateElementInit() {
       <div class="item-bg bg-overlay">
         <div class="bg-section2">
           <div class="col-xs-12 col-sm-12 col-md-12 view-new" style="padding: 70px;">
-            <div class="col-xs-12 col-sm-6 col-md-6" style="font-size: 26px; display: flex; justify-content: flex-start; padding: 20px; backdrop-filter: blur(5px);">
+            <div class="col-xs-12 col-sm-6 col-md-6" style="font-size: 26px; display: flex; justify-content: flex-start; padding: 20px; backdrop-filter: blur(5px); flex-direction: column;">
               <!-- <img src="assets\images/NewPage/0.png" alt="Background" style="width: 76%;" /> -->
               <p style="color: white; text-align: justify; font-size: 12px;">
-                <strong style="font-size: 20px;">Bienvenidos a PARAGLIDER VENEZUELA 🪂</strong>    
+                <strong style="font-size: 20px;">Bienvenidos a PARAGLIDING VENEZUELA 🪂</strong>
                 <br>
                 <br>
                     ¡Vive la emoción del vuelo sin despegar los pies del suelo!<br><br>
                     Somos la primera empresa de entretenimiento especializada en juegos mecánicos de simulación de vuelo en parapente en Venezuela. Combinamos tecnología de vanguardia, paisajes locales y adrenalina pura para que vivas una experiencia única, segura y accesible para todos.
                     <br><br>
-                    <strong>¿Qué es PARAGLIDER?</strong><br><br>
-                    Paraglider es un simulador de vuelo en parapente con tecnología inmersiva que te hace sentir como si volaras sobre montañas, playas o valles, todo dentro de una cápsula segura con movimiento real y efectos de viento. Ideal para todas las edades, desde niños hasta adultos que buscan emoción y diversión.
+                    <strong>¿Qué es PARAGLIDING?</strong><br><br>
+                    Paragliding es un simulador de vuelo en parapente con tecnología inmersiva que te hace sentir como si volaras sobre montañas, playas o valles, todo dentro de una cápsula segura con movimiento real y efectos de viento. Ideal para todas las edades, desde niños hasta adultos que buscan emoción y diversión.
                     <br><br>
-                    Con Paraglider podrás:
-                    <br><br>
-                    · Sentir el despegue, vuelo y aterrizaje como si estuvieras en el aire.
-                    <br><br>
-                    · Elegir escenarios de vuelo inspirados en paisajes de Venezuela (El Ávila, Morrocoy, Mérida, Canaima).
-                    <br><br>
-                    · Obtener una foto digital o impresa como recuerdo de tu vuelo.
               </p>
+              <video class="video"  muted autoplay loop>
+                <source src="assets/images/NewPage/video.mp4" type="video/mp4">
+              </video>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 img-about hidden-sm hidden-xs" style="display: flex; justify-content: flex-end;">
               <!-- <img src="assets\images/NewPage/5.png" alt="Background" style="width: 76%;" /> -->
@@ -236,6 +206,7 @@ function googleTranslateElementInit() {
   <section id="contacto" class="hero-2" style="background-image: url(assets/images/NewPage/2.png); background-size: cover; background-position: center;">
     <div class="row contact-mb" style="padding: 0 8%;">
       <div class="col-xs-12 col-sm-12 col-md-12 view-new" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; padding: 70px;">
+        <strong style="font-size: 20px; color: #de592f;  margin-bottom: 20px">¿Donde estamos ubicados? </strong> 
         
         <div class="col-xs-12 col-sm-12 col-md-12" style="padding: 20px; backdrop-filter: blur(5px);">
           <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 15px;">
