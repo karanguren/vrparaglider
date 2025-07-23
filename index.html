@@ -62,12 +62,16 @@ function googleTranslateElementInit() {
     .fixed-footer {
       position: fixed;
       bottom: 20px;
-      /* right: 20px; */
       background-color: transparent;
       color: white;
       padding: 10px 0px;
       font-size: 14px;
       z-index: 9999;
+    }
+
+    .bg-page {
+      background-size: 100% 100%;
+      height: 100vh;
     }
 
     @media (max-width: 991px) {
@@ -76,7 +80,7 @@ function googleTranslateElementInit() {
         padding: 0 !important;
       }
 
-        .footer-izquierda {
+      .footer-izquierda {
         left: 10px;
       }
 
@@ -92,6 +96,15 @@ function googleTranslateElementInit() {
         width: 100%;
       }
 
+      .bg-page {
+        background-size: auto 100%;
+      }
+
+      .video {
+        width: 100%;
+        align-self: center;
+      }
+
     }
 
     .footer-izquierda {
@@ -103,8 +116,10 @@ function googleTranslateElementInit() {
     }
 
     .video {
-      width: 100%;
+      width: 60%;
       height: auto;
+      align-self: center;
+      z-index: 1;
     }
     
   </style>
@@ -160,7 +175,7 @@ function googleTranslateElementInit() {
 
   <!-- Banner
 ============================================= -->
-  <section id="inicio" class="hero-2 active" style="background-image: url(assets/images/NewPage/3.png); background-size: cover; background-position: center; height: 100vh;">
+  <section id="inicio" class="hero-2 active bg-page" style="background-image: url(assets/images/NewPage/3.png); background-position: center;">
     <div class="item">
       <div class="item-bg bg-overlay">
         <div class="bg-section2">
@@ -172,25 +187,23 @@ function googleTranslateElementInit() {
     </div>
   </section>
 
-  <section id="nosotros" class="hero-2" style="background-image: url(assets/images/NewPage/1.png); background-size: cover; background-position: center;">
-    <div class="item">
+  <section id="nosotros" class="hero-2 bg-page" style="background-image: url(assets/images/NewPage/1.png); background-position: center;">
+    <div class="item">    
       <div class="item-bg bg-overlay">
         <div class="bg-section2">
           <div class="col-xs-12 col-sm-12 col-md-12 view-new" style="padding: 70px;">
-            <div class="col-xs-12 col-sm-6 col-md-6" style="font-size: 26px; display: flex; justify-content: flex-start; padding: 20px; backdrop-filter: blur(5px); flex-direction: column;">
-              <!-- <img src="assets\images/NewPage/0.png" alt="Background" style="width: 76%;" /> -->
-              <p style="color: white; text-align: justify; font-size: 12px;">
-                <strong style="font-size: 20px; color: #de592f; ">Bienvenidos a PARAGLIDING VENEZUELA 🪂</strong>
-                <br>
-                <br>
+            <div class="col-xs-12 col-sm-12 col-md-6" style="font-size: 26px; display: flex; justify-content: flex-start; padding: 20px; flex-direction: column;">
+              <strong style="font-size: 25px; color: #de592f; margin-bottom: 18px;">Bienvenidos a PARAGLIDING VENEZUELA 🪂</strong>
+              <div style="backdrop-filter: blur(5px); padding: 20px 20px 72px; background-color: #ffffffba; border-radius: 15px;">
+                <p style="text-align: justify; font-size: 12px; color: #406f90">
                     ¡Vive la emoción del vuelo sin despegar los pies del suelo!<br><br>
                     Somos la primera empresa de entretenimiento especializada en juegos mecánicos de simulación de vuelo en parapente en Venezuela. Combinamos tecnología de vanguardia, paisajes locales y adrenalina pura para que vivas una experiencia única, segura y accesible para todos.
                     <br><br>
                     <strong>¿Qué es PARAGLIDING?</strong><br><br>
                     Paragliding es un simulador de vuelo en parapente con tecnología inmersiva que te hace sentir como si volaras sobre montañas, playas o valles, todo dentro de una cápsula segura con movimiento real y efectos de viento. Ideal para todas las edades, desde niños hasta adultos que buscan emoción y diversión.
-                    <br><br>
-              </p>
-              <video class="video"  muted autoplay loop>
+                </p>
+              </div>
+              <video class="video"  muted autoplay loop style="margin-top: -35px; border-radius: 15px;">
                 <source src="assets/images/NewPage/video.mp4" type="video/mp4">
               </video>
             </div>
@@ -203,10 +216,10 @@ function googleTranslateElementInit() {
     </div>
   </section>
 
-  <section id="contacto" class="hero-2" style="background-image: url(assets/images/NewPage/2.png); background-size: cover; background-position: center;">
+  <section id="contacto" class="hero-2 bg-page" style="background-image: url(assets/images/NewPage/2.png); background-position: center;">
     <div class="row contact-mb" style="padding: 0 8%;">
       <div class="col-xs-12 col-sm-12 col-md-12 view-new" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; padding: 70px;">
-        <strong style="font-size: 20px; color: #de592f;  margin-bottom: 20px">¿Donde estamos ubicados? </strong> 
+        <strong style="font-size: 25px; margin-bottom: 20px">¿Donde estamos ubicados? </strong> 
         
         <div class="col-xs-12 col-sm-12 col-md-12" style="padding: 20px; backdrop-filter: blur(5px);">
           <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 15px;">
@@ -257,18 +270,16 @@ function googleTranslateElementInit() {
             </span>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 widgets-contact" style="font-size: 12px; padding: 20px; backdrop-filter: blur(5px); margin-top: 20px;">
+        <!-- <div class="col-xs-12 col-sm-12 col-md-12 widgets-contact" style="font-size: 12px; padding: 20px; backdrop-filter: blur(5px); margin-top: 20px;">
           <hr style="color: #de592f; border-top: 1px solid #de592f;">
           <div class="widget" style="margin-bottom: 41px; padding-left: 0px !important;">
             <div class="" style="color: #2f2f2f; margin-top: 5px;">
-              <!-- <img src="assets/images/email.png" style="width: 60px;"> -->
-              <!-- <img src="assets\images/NewPage/correo.png" alt="Background" style="width: 90px; padding-bottom: 20px;" /> -->
               <p class="font-heading text-uppercase" style="color: white; font-weight: 900; margin-left: 0px; font-size: 13px;">
                 <a href="#" style="color: white; font-weight: 900; margin-left: 0px;">111@111.com</a>
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     </div>
