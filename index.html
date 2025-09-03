@@ -90,7 +90,6 @@ function googleTranslateElementInit() {
       }
     }
 
-    /* ------------------- FLOATING IMAGES ------------------- */
     .float-img {
       animation: float 3s ease-in-out infinite;
     }
@@ -109,49 +108,27 @@ function googleTranslateElementInit() {
       }
     }
 
-    /* ------------------- IMAGE HOVER GLOW ------------------- */
     .img-hover-glow {
       transition: all 0.3s ease-in-out;
     }
 
     .img-hover-glow:hover {
       transform: scale(1.05);
-      filter: drop-shadow(0 0 15px #0ff);
+      filter: drop-shadow(0 0 15px #de592f);
     }
 
-    /* ------------------- ICONS FOOTER GLOW ------------------- */
+
     footer i {
       transition: all 0.3s ease-in-out;
       color: #fff;
     }
 
     footer i:hover {
-      color: #0ff;
-      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+      color: #de592f;
+      text-shadow: 0 0 10px #de592f, 0 0 20px #de592f, 0 0 30px #de592f;
       transform: scale(1.2);
     }
 
-    /* ------------------- FLOATING EFFECT REEMPLAZANDO PULSE ------------------- */
-    .float-glow {
-      animation: float-glow 3s ease-in-out infinite;
-    }
-
-    @keyframes float-glow {
-      0% {
-        transform: translateY(0px);
-        filter: drop-shadow(0 0 5px #0ff);
-      }
-
-      50% {
-        transform: translateY(-10px);
-        filter: drop-shadow(0 0 15px #0ff);
-      }
-
-      100% {
-        transform: translateY(0px);
-        filter: drop-shadow(0 0 5px #0ff);
-      }
-    }
 
     .diagonal {
       writing-mode: vertical-rl;
@@ -240,13 +217,25 @@ function googleTranslateElementInit() {
       object-fit: cover;
       z-index: -1;
     }
+
+    .map {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border-radius: 7px;
+      width: 100%;
+      height: 200px;
+    }
+
+    .map:hover {
+      transform: scale(1.05);        
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3); 
+    }
   </style>
 </head>
 
 <body class="">
   <div class="preloader">
     <div class="spinner">
-      <img class="img-responsive img-home-mb" src="assets\images/NewPage/cargando.png" alt="Background"
+      <img class="img-responsive img-home-mb" src="assets/images/NewPage/cargando.png" alt="Background"
         style="width: 200%; padding-bottom: 20px;" />
       <!-- <div class="bounce1">
       </div>
@@ -300,10 +289,10 @@ function googleTranslateElementInit() {
       <div class="item-bg bg-overlay">
         <div class="bg-section2">
           <div class="col-xs-12 col-sm-12 col-md-12 view-new-hm">
-            <img class="img-responsive img-home-mb" src="assets\images/NewPage/c1.png" alt="Background"
+            <img class="img-responsive img-home-mb float-img img-hover-glow" src="assets/images/NewPage/c1.png" alt="Background"
               style="width: 60%;" />
-            <img class="img-responsive img-home-mb" src="assets\images/NewPage/logo.png" alt="Background"
-              style="width: 17%;" />
+            <img class="img-responsive img-home-mb" src="assets/images/NewPage/logo.png" alt="Background"
+              style="width: 15%;" />
           </div>
         </div>
       </div>
@@ -324,14 +313,14 @@ function googleTranslateElementInit() {
 
         <div>
           <strong class="neon-text" style="font-size: 25px; margin-bottom: 20px;">Bienvenidos a PARAGLIDING VENEZUELA 🪂</strong>
-          <div style="backdrop-filter: blur(5px); padding: 20px; background-color: rgba(255,255,255,0.7); border-radius: 15px;">
-            <p style="text-align: justify; font-size: 12px; color: #406f90">
+          <!-- <div style="backdrop-filter: blur(5px); padding: 20px; background-color: rgba(255,255,255,0.7); border-radius: 15px;"> -->
+            <p style="text-align: justify; font-size: 18px; color: #000000; margin-top: 10px; ">
               ¡Vive la emoción del vuelo sin despegar los pies del suelo!<br><br>
               Somos la primera empresa de entretenimiento especializada en juegos mecánicos de simulación de vuelo en
               parapente en Venezuela. Combinamos tecnología de vanguardia, paisajes locales y adrenalina pura para que
               vivas una experiencia única, segura y accesible para todos.
             </p>
-          </div>
+          <!-- </div> -->
         </div>
         <div style="height: 50vh" class="hidden-xs hidden-sm"></div>
       </div>
@@ -351,10 +340,8 @@ function googleTranslateElementInit() {
               tabindex="0"></iframe>
 
             <hr style="color: #de592f; margin-top: 0px; border-top: 1px solid #de592f;">
-            <span class="badge text-bg-light"
-              style="text-align: start; color: #de592f; padding: 9px 14px; background-color: #333;">
-              <i class="fa fa-map-marker" style="color: #de592f;" aria-hidden="true"></i>
-              🛍️ C.C.C.T
+            <span class="badge text-bg-light neon-text" style="text-align: start; color: #de592f; padding: 9px 14px; background-color: #333;">
+              C.C.C.T
             </span>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 15px;">
@@ -364,10 +351,8 @@ function googleTranslateElementInit() {
               tabindex="0"></iframe>
 
             <hr style="color: #de592f; margin-top: 0px; border-top: 1px solid #de592f;">
-            <span class="badge text-bg-light"
-              style="text-align: start; color: #de592f; padding: 9px 14px; background-color: #333;">
-              <i class="fa fa-map-marker" style="color: #de592f;" aria-hidden="true"></i>
-              🛍️ C.C. Parque Cerro Verde
+            <span class="badge text-bg-light  neon-text" style="text-align: start; color: #de592f; padding: 9px 14px; background-color: #333;">
+              PARQUE CERRO VERDE
             </span>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 15px;">
@@ -377,10 +362,8 @@ function googleTranslateElementInit() {
               tabindex="0"></iframe>
 
             <hr style="color: #de592f; margin-top: 0px; border-top: 1px solid #de592f;">
-            <span class="badge text-bg-light"
-              style="text-align: start; color: #de592f; padding: 9px 14px; background-color: #333;">
-              <i class="fa fa-map-marker" style="color: #de592f;" aria-hidden="true"></i>
-              🛍️ C.C. El Recreo
+            <span class="badge text-bg-light neon-text" style="text-align: start; color: #de592f; padding: 9px 14px; background-color: #333;">
+              C.C. EL RECREO
             </span>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 15px;">
@@ -389,10 +372,8 @@ function googleTranslateElementInit() {
               width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
               tabindex="0"></iframe>
             <hr style="color: #de592f; margin-top: 0px; border-top: 1px solid #de592f;">
-            <span class="badge text-bg-light"
-              style="text-align: start; color: #de592f; padding: 9px 14px; background-color: #333;">
-              <i class="fa fa-map-marker" style="color: #de592f;" aria-hidden="true"></i>
-              🛍️ Parque Cerro Verde
+            <span class="badge text-bg-light neon-text" style="text-align: start; color: #de592f; padding: 9px 14px; background-color: #333;">
+              Parque Cerro Verde
             </span>
           </div>
         </div>
