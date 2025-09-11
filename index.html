@@ -50,7 +50,7 @@ function googleTranslateElementInit() {
 
   <!-- Document Title
     ============================================= -->
-  <title>VR PARAGLIDING</title>
+  <title>VR PARAGLIDER</title>
 
   <style>
     /* ------------------- NEON TEXT ------------------- */
@@ -153,7 +153,7 @@ function googleTranslateElementInit() {
     @media (max-width: 991px) {
 
       .bg-2 {
-       background-image: url(assets/images/NewPage/2.png) !important;
+       background-position: right !important;
       }
 
       .contact-mb {
@@ -188,7 +188,15 @@ function googleTranslateElementInit() {
         display: flex;
         height: 100vh;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
+      }
+
+      .video-bg{
+        width: 100% !important;
+      }
+
+      .spinner {
+        left: 29% !important;
       }
 
     }
@@ -235,14 +243,7 @@ function googleTranslateElementInit() {
 <body class="">
   <div class="preloader">
     <div class="spinner">
-      <img class="img-responsive img-home-mb" src="assets/images/NewPage/CARGANDO.png" alt="Background"
-        style="width: 200%; padding-bottom: 20px;" />
-      <!-- <div class="bounce1">
-      </div>
-      <div class="bounce2">
-      </div>
-      <div class="bounce3">
-      </div> -->
+      <img class="img-responsive " src="assets/images/NewPage/CARGANDO.png" alt="Background" style=" padding-bottom: 20px;" />
     </div>
   </div>
 
@@ -283,29 +284,30 @@ function googleTranslateElementInit() {
 
   <!-- Banner
 ============================================= -->
-  <section id="inicio" class="hero-2 active bg-page"
-    style="background-image: url(assets/images/NewPage/a1.png); background-position: center;">
+  
+  <section id="inicio" class="hero-2 active bg-page" style="background-image: url(assets/images/NewPage/a1.png); background-position: center;">
     <div class="item">
       <div class="item-bg bg-overlay">
         <div class="bg-section2">
           <div class="col-xs-12 col-sm-12 col-md-12 view-new-hm">
             <img class="img-responsive img-home-mb float-img img-hover-glow" src="assets/images/NewPage/C1.png" alt="Background"
-              style="width: 60%;" />
-            <img class="img-responsive img-home-mb" src="assets/images/NewPage/logo.png" alt="Background"
-              style="width: 15%;" />
+              style="width: 25%;" />
+            <!-- <img class="img-responsive img-home-mb" src="assets/images/NewPage/logo.png" alt="Background"
+              style="width: 15%;" /> -->
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section> 
+  
+  
 
-  <section id="nosotros" class="hero-2 bg-page bg-2"
-    style="background-image: url(assets/images/NewPage/a2.png); background-position: center; position: relative;">
+  <section id="nosotros" class="hero-2 bg-page bg-2" style="background-image: url(assets/images/NewPage/a2.png); background-position: center; position: relative;">
     <video class="video-bg" autoplay muted loop playsinline>
       <source src="assets/images/NewPage/video.mp4" type="video/mp4">
     </video>
 
-    <div class="row view-new" style="padding: 70px; position: relative; z-index: 2;">
+    <div class="row view-new" style="padding: 70px; position: relative; z-index: 2; margin-top: 80px;">
 
       <div class="col-xs-12 col-sm-12 col-md-12 hidden-xs hidden-sm"></div>
 
@@ -313,7 +315,7 @@ function googleTranslateElementInit() {
 
         <div>
           <p style="font-size: 25px; margin-bottom: 40px;">
-            <strong class="neon-text" >Bienvenidos a PARAGLIDING VENEZUELA 🪂</strong>
+            <strong class="neon-text" >Bienvenidos a PARAGLIDER VENEZUELA 🪂</strong>
           </p>
           <p style="text-align: justify; font-size: 20px; color: #fff; margin-top: 10px; ">
             ¡Vive la emoción del vuelo sin despegar los pies del suelo!<br><br>
@@ -322,13 +324,13 @@ function googleTranslateElementInit() {
             vivas una experiencia única, segura y accesible para todos.
           </p>
         </div>
-        <div style="height: 50vh" class="hidden-xs hidden-sm"></div>
+        <div style="height: 50vh" ></div>
       </div>
     </div>
   </section>
 
   <section id="contacto" class="hero-2 bg-page" style="background-image: url(assets/images/NewPage/a3.png); background-position: center;">
-    <div class="row contact-mb" style="padding: 0 8%;">
+    <div class="row contact-mb">
       <div class="col-xs-12 col-sm-12 col-md-12 view-new" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; padding: 70px;">
         <strong class="neon-text" style="font-size: 28px; margin-bottom: 20px;">¿Dónde estamos ubicados?</strong>
 
@@ -425,7 +427,7 @@ function googleTranslateElementInit() {
   </script>
   <script>
     function openEmail() {
-      const email = "soporte@sqlapio.com";
+      const email = "vrparagliderve@gmail.com";
       const subject = "Solicitar Información";
 
       // Intenta abrir Gmail en una nueva pestaña
