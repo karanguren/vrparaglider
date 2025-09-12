@@ -152,6 +152,26 @@ function googleTranslateElementInit() {
 
     @media (max-width: 991px) {
 
+      .row-text {
+        padding: 40px !important;
+      }
+
+      .padding-maps {
+        padding: 0px !important;
+      }
+
+      .video-size {
+        height: 80vh !important;
+      }
+
+      .text-title {
+        font-size: 18px;
+      }
+
+      .text-pa {
+        font-size: 13px !important;
+      }
+
       .bg-2 {
        background-position: right !important;
       }
@@ -161,7 +181,7 @@ function googleTranslateElementInit() {
       }
 
       .footer-izquierda {
-        left: 10px;
+        left: 0px !important;
       }
 
       .footer-derecha {
@@ -196,7 +216,7 @@ function googleTranslateElementInit() {
       }
 
       .spinner {
-        left: 29% !important;
+        left: 53% !important;
       }
 
     }
@@ -284,6 +304,7 @@ function googleTranslateElementInit() {
 
   <!-- Banner
 ============================================= -->
+
   
   <section id="inicio" class="hero-2 active bg-page" style="background-image: url(assets/images/NewPage/a1.png); background-position: center;">
     <div class="item">
@@ -307,7 +328,7 @@ function googleTranslateElementInit() {
       <source src="assets/images/NewPage/video.mp4" type="video/mp4">
     </video>
 
-    <div class="row view-new" style="padding: 70px; position: relative; z-index: 2; margin-top: 60px;">
+    <div class="row view-new row-text" style="padding: 70px; position: relative; z-index: 2; margin-top: 60px;">
 
       <div class="col-xs-12 col-sm-12 col-md-12 hidden-xs hidden-sm"></div>
 
@@ -315,26 +336,26 @@ function googleTranslateElementInit() {
 
         <div>
           <p style="font-size: 25px; margin-bottom: 40px;">
-            <strong class="neon-text" >Bienvenidos a PARAGLIDER VENEZUELA 🪂</strong>
+            <strong class="neon-text text-title " >Bienvenidos a PARAGLIDER VENEZUELA 🪂</strong>
           </p>
-          <p style="text-align: justify; font-size: 20px; color: #fff; margin-top: 10px; ">
+          <p class="text-pa" style="text-align: justify; font-size: 20px; color: #fff; margin-top: 10px; ">
             ¡Vive la emoción del vuelo sin despegar los pies del suelo!<br><br>
             Somos la primera empresa de entretenimiento especializada en juegos mecánicos de simulación de vuelo en
             parapente en Venezuela. Combinamos tecnología de vanguardia, paisajes locales y adrenalina pura para que
             vivas una experiencia única, segura y accesible para todos.
           </p>
         </div>
-        <div style="height: 50vh" ></div>
+        <div class="video-size" style="height: 50vh" ></div>
       </div>
     </div>
   </section>
 
   <section id="contacto" class="hero-2 bg-page" style="background-image: url(assets/images/NewPage/a3.png); background-position: center;">
     <div class="row contact-mb">
-      <div class="col-xs-12 col-sm-12 col-md-12 view-new" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; padding: 70px;">
+      <div class="col-xs-12 col-sm-12 col-md-12 view-new" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; padding: 60px;">
         <strong class="neon-text" style="font-size: 28px; margin-bottom: 20px;">¿Dónde estamos ubicados?</strong>
 
-        <div class="col-xs-12 col-sm-12 col-md-12" style="padding: 20px; backdrop-filter: blur(5px);">
+        <div class="col-xs-12 col-sm-12 col-md-12 padding-maps" style="padding: 20px; backdrop-filter: blur(5px);">
           <div class="col-xs-12 col-sm-6 col-md-3" style="margin-bottom: 15px;">
             <iframe class="map" style="margin: 0 auto; border-radius: 7px; border: 0px;"
               src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=c.c.c.t%20caracas+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
